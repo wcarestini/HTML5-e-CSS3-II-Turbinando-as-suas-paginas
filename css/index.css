@@ -10,6 +10,7 @@
 .foto-home {
     height: 200px;
     border-radius: 50%;
+    box-shadow: 0 0 1em #000;
 }
 
 .saudacao p {
@@ -49,6 +50,7 @@
     margin: 2em auto;
     display: block;
     text-align: center;
+    box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;
 }
 
 .secao-inicio {
@@ -57,7 +59,7 @@
 
 .secao-inicio h2 {
     font-size: 3em;
-    text-shadow: 2px 2px #000;
+    text-shadow: 5px 5px #000;
     text-transform: uppercase;
     margin-bottom: .5em;
 }
@@ -130,6 +132,7 @@ main {
     left: 75%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
+    opacity: .3;
 }
 .palavra-home{
     position: absolute;
@@ -143,6 +146,7 @@ main {
     left: 20%;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
+    opacity: .3;
 }
 .codigo-limpo {
     position: absolute;
@@ -150,6 +154,7 @@ main {
     left: 10%;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
+    opacity: .6;
 }
 .css3 {
     position: absolute;
@@ -157,6 +162,7 @@ main {
     left: 30%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
+    opacity: .6;
 }
 .html5 {
     position: absolute;
@@ -164,6 +170,7 @@ main {
     left: 80%;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
+    opacity: .6;
 }
 .javascript {
     position: absolute;
@@ -171,6 +178,7 @@ main {
     left: 60%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
+    opacity: .3;
 }
 .acessibilidade {
     position: absolute;
@@ -178,6 +186,7 @@ main {
     left: 25%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
+    opacity: .8;
 }
 .responsivo {
     position: absolute;
@@ -185,6 +194,7 @@ main {
     left: 15%;
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
+    opacity: .8;
 }
 .otimizacoes {
     position: absolute;
@@ -192,6 +202,7 @@ main {
     left: 70%;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
+    opacity: .6;
 }
 .agilidade {
     position: absolute;
@@ -199,6 +210,7 @@ main {
     left: 30%;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
+     opacity: .3;
 }
 .design {
     position: absolute;
@@ -206,6 +218,7 @@ main {
     left: 65%;
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
+     opacity: .6;
 }
 .titulo-principal{
     position: relative;
@@ -263,4 +276,5 @@ p{
 .subtitulo-principal{
     font-size: 22px;
 }
+
 

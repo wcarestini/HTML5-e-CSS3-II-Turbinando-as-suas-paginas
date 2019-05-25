@@ -89,7 +89,7 @@ em{
 
 }
 #rodape-pagina {
-    background-color: #000;
+    background-color: rgb(0,0,0,.8);
     color: #F2FFFC;
     padding: 20px;
     text-align: center;
@@ -129,6 +129,7 @@ article{
 }
 h1{
 	text-transform: uppercase;
+	text-shadow: 5px 5px #000;
 }
 nav a{
 	text-transform: lowercase;
