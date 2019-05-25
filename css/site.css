@@ -160,6 +160,7 @@ cite {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	border-radius: 10% 50% / 50% 10%;
 }
 aside{
 	width: 15%;
