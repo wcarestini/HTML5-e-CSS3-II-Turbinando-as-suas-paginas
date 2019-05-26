@@ -133,13 +133,13 @@ em{
 	text-indent: -99999px;
 }
 .github{
-	background-image: url(../img/github.png);
+	background-image: url(img/github.png);
 }
 .twitter{
-	background-image: url(../img/twitter.png);
+	background-image: url(img/twitter.png);
 }
 .linkedin{
-	background-image: url(../img/linkedin.png);
+	background-image: url(img/linkedin.png);
 }
 h1{
 	text-transform: uppercase;
@@ -148,10 +148,10 @@ h1{
 nav a{
 	text-transform: lowercase;
 }
-.fiat{
+.citacoes:nth-of-type(odd){
 	float: right;
 }
-.petrobras{
+.citacoes:nth-of-type(even){
 	float: left;
 }
 aside, .minha-foto{
@@ -181,4 +181,28 @@ aside{
 	width: 15%;
 	position: relative;
 	top: 310px;
+}
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus,
+.banner-twitter:hover,
+.banner-twitter:focus {
+	color:red;
+}
+.navegacao-site a:hover,
+.navegacao-site a:focus{
+	text-shadow: 0 0 2px pink;
+}
+.citacoes:hover,
+.citacoes:focus{
+	box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+.citacoes:nth-of-type(odd):hover,
+.citacao:nth-of-type(odd):focus{
+	transform: scale(1.2) rotate(5deg);
+}
+.citacoes:nth-of-type(even):hover,
+.citacao:nth-of-type(even):focus{
+	transform: scale(1.2) rotate(-5deg);
 }

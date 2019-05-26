@@ -247,7 +247,7 @@ main {
 p{
     text-align: center;
 }
-.blog .inicio-post {
+.blog p {
     position: absolute;
     top: 4em;
     height: 8em;
@@ -256,6 +256,7 @@ p{
     background-color: #F2FFFC;
     color: #000;
     padding: 1.5em;
+    display:none;
 }
 .blog .mais-recente {
     background-color: #F2FFFC;
@@ -297,5 +298,12 @@ p{
 .subtitulo-principal{
     font-size: 22px;
 }
-
-
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post{
+    display: block;
+}
+.blog a:hover,
+.blog a:focus{
+    background-color: #F2FFFC;
+    color: #F26;
+}
