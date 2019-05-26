@@ -1,4 +1,21 @@
 html{
+	animation: aparecePrinc 5s ease-in;
+	
+    overflow-x: hidden;
+    height: 100%;
+}
+@keyframes aparecePrinc{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 2;
+	}
+}
+html{
 	font-size: 90%;
 }
 body {
@@ -33,6 +50,21 @@ p {
     margin: 20px 40px;
     width: 250px;
     box-sizing: border-box;
+    transition: transform 1s linear, box-shadow 2s linear;
+    transition-delay: 0s, 1s;
+    position: relative;
+    animation: quica 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes quica{
+	0%{
+		top: 0;
+	}
+
+	100%{
+		top: 1em;
+	}
 }
 
 .navegacao-site {
@@ -198,6 +230,7 @@ footer a:focus,
 .citacoes:hover,
 .citacoes:focus{
 	box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+	animation-play-state: paused;
 }
 .citacoes:nth-of-type(odd):hover,
 .citacao:nth-of-type(odd):focus{

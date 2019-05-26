@@ -160,6 +160,13 @@ main {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
     color: #D5447E;
+    
+}
+@keyframes aparece{
+    0% {
+        opacity: 0;
+        transform: scale(0.01);
+    }
 }
 .boas-praticas {
     position: absolute;
@@ -275,6 +282,12 @@ p{
     display: inline-block;
 }
 .banner-twitter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+    
     width: 14em;
     line-height: 1;
     padding: 1em 0;
@@ -289,12 +302,10 @@ p{
     font-size: .4em;
     font-family: "Open Sans Condesed", sans-serif;
 
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform-origin: 0 0;
-    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
-}
+    animation: aparece 9s;
+
+    
+    }
 .subtitulo-principal{
     font-size: 22px;
 }
@@ -307,3 +318,34 @@ p{
     background-color: #F2FFFC;
     color: #F26;
 }
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+}
+.botao-index {
+    text-decoration: none;
+    transition: .5s;
+}
+h1, .palavra-home, .subtitulo-principal{
+    animation: aparece 9s;
+}
+.foto-home{
+    animation: aparece 7.5s;
+}
+.saudacao em{
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+@keyframes flutua{
+    from{
+        top: -5px;
+    }
+    to{
+        top: 5px;
+    }
+}
+
