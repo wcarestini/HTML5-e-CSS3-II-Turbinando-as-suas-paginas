@@ -16,6 +16,16 @@ textarea {
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
+input[type="text"],
+input[name="nome"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
 input:focus,
 textarea:focus {
     background-color: #FFD;
@@ -39,4 +49,46 @@ button {
 button:hover,
 button:focus {
     background-color: #8C1D3D;
+}
+label[for="nome"]{
+	position: relative;
+}
+label[for="nome"]:after {
+	content: "";
+	background-color: #8C1D3D;
+	background-repeat: no-repeat;
+	background-image: url(img/usuario.png);
+	background-size: 50% 50%;
+	background-position: center;
+	width: 2em;
+	height: 2em;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+#nome{
+	width: calc(100% - 2em);
+	position: relative;
+	left: 2em;
+}
+label[for="email"]{
+	position: relative;
+}
+label[for="email"]:after {
+	content: "";
+	background-color: #8C1D3D;
+	background-repeat: no-repeat;
+	background-image: url(img/email.png);
+	background-size: 50% 50%;
+	background-position: center;
+	width: 2em;
+	height: 2em;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+#email{
+	width: calc(100% - 2em);
+	position: relative;
+	left: 2em;
 }

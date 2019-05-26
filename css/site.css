@@ -163,7 +163,7 @@ aside, .minha-foto{
 }
 main{
 	float: left;
-	width: 85%;
+	width: calc(100% - 0.9 * 300px);
 }
 cite {
 	float: right;
@@ -178,9 +178,10 @@ cite {
 	border-radius: 10% 50% / 50% 10%;
 }
 aside{
-	width: 15%;
+	width: calc(0.9 * 300px);
+	float: right;
 	position: relative;
-	top: 310px;
+	top: 300px;
 }
 main a:hover,
 main a:focus,
