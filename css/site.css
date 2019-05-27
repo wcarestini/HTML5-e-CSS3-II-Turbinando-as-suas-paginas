@@ -23,6 +23,9 @@ body {
 	background-color: #F2FFFC;
 
 	line-height: 1.5;
+	display: flex;
+	flex-wrap: wrap;
+	
 }
 
 h1, h2 {
@@ -194,7 +197,7 @@ aside, .minha-foto{
 	box-sizing: border-box;
 }
 main{
-	float: left;
+	flex-grow: 1;
 	width: calc(100% - 0.9 * 300px);
 }
 cite {
